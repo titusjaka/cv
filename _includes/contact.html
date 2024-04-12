@@ -1,6 +1,22 @@
 <div class="contact-container container-block">
   <ul class="list-unstyled contact-list">
 
+    {% if sidebar.citizenship %}
+    <li class="phone"><i class="fas fa-passport"></i>
+      <a href="">{{ sidebar.citizenship }}</a>
+    </li>
+    {% endif %}
+
+    {% if sidebar.timezone.name %}
+    <li class="timezone"><i class="fas fa-clock"></i>
+      {% if sidebar.timezone.link %}
+      <a href="{{ sidebar.timezone.link }}" target="_blank">{{ sidebar.timezone.name }}</a>
+      {% else %}
+      <a href="">{{ sidebar.timezone.name }}</a>
+      {% endif %}
+    </li>
+    {% endif %}
+
     {% if sidebar.email %}
     <li class="email"><i class="fas fa-envelope"></i>
       <a href="mailto:{{ sidebar.email }}">{{ sidebar.email }}</a>
@@ -10,18 +26,6 @@
     {% if sidebar.phone %}
     <li class="phone"><i class="fas fa-phone"></i>
       <a href="tel:{{ sidebar.phone }}">{{ sidebar.phone }}</a>
-    </li>
-    {% endif %}
-
-    {% if sidebar.citizenship %}
-    <li class="phone"><i class="fas fa-passport"></i>
-      <a href="">{{ sidebar.citizenship }}</a>
-    </li>
-    {% endif %}
-
-    {% if sidebar.timezone %}
-    <li class="timezone"><i class="fas fa-clock"></i>
-      <a href="">{{ sidebar.timezone }}</a>
     </li>
     {% endif %}
 
@@ -51,19 +55,19 @@
 
     {% if sidebar.github %}
     <li class="github"><i class="fab fa-github"></i>
-      <a href="http://github.com/{{ sidebar.github }}" target="_blank">{{ sidebar.github }}</a>
+      <a href="https://github.com/{{ sidebar.github }}" target="_blank">{{ sidebar.github }}</a>
     </li>
     {% endif %}
 
     {% if sidebar.gitlab %}
     <li class="gitlab"><i class="fab fa-gitlab"></i>
-      <a href="http://gitlab.com/{{ sidebar.gitlab }}" target="_blank">{{ sidebar.gitlab }}</a>
+      <a href="https://gitlab.com/{{ sidebar.gitlab }}" target="_blank">{{ sidebar.gitlab }}</a>
     </li>
     {% endif %}
 
     {% if sidebar.bitbucket %}
     <li class="bitbucket"><i class="fab fa-bitbucket"></i>
-      <a href="http://bitbucket.com/{{ sidebar.bitbucket }}" target="_blank">{{ sidebar.bitbucket }}</a>
+      <a href="https://bitbucket.com/{{ sidebar.bitbucket }}" target="_blank">{{ sidebar.bitbucket }}</a>
     </li>
     {% endif %}
 

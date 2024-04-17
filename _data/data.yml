@@ -73,18 +73,36 @@ career-profile:
 experiences:
   title: Experiences
   info:
-#    # TODO: fill experience about headframe
-#    - role: Senior Software Engineer (Golang)
-#      time: Aug 2022 – Mar 2024
-#      company: Headframe, Abu Dhabi (remotely)
-#      website: https://headframe.io/en/
-#      details: |
-#
-#        **Technologies** :
-#          - Golang, Clickhouse, PostgreSQL, Redis, Docker, Kubernetes, Github, Argo CD.
-#
-#        **Approaches** :
-#          - Kanban, code reviews, clean code architecture.
+    - role: Senior Software Engineer (Golang)
+      time: Aug 2022 – Mar 2024
+      company: Headframe, Abu Dhabi (remotely)
+      website: https://headframe.io/en/
+      details: |
+        _Headframe is a startup that develops software for Bitcoin mining and hashrate management._
+
+        I joined the project as the first developer and worked through the entire lifecycle of the company. 
+        Our team consisted of two backend developers, one frontend developer, one DevOps, and the CTO.
+
+        Despite the fact that we were a small startup, we followed best practices.
+          - All essential decisions were captured in Architecture Decision Records (ADRs).
+          - Code was covered with unit and functional testing. Coverage was around 90%.
+          - We had solid CI/CD processes, including automated testing, linters, and deployment to a K8s cluster.
+
+        These concepts helped us maintain a rapid development pace throughout the company's lifecycle. I was more 
+        than just a consumer of these ideals; I helped create them.
+
+        My main achievements:
+          - I developed the Stratum Relay. It's a TCP server that connects ASICs (mining devices) to a parent mining pool. 
+            It was capable of serving 20,000 concurrent TCP connections with a latency as low as 20 ms.
+          - I developed a virtual mining feature. Virtual mining allows users to rent ASICs with a few clicks and start 
+            mining within minutes.
+          - I developed an API service with over 200 endpoints. All endpoints were protected by a proper permission model.
+
+        **Technologies** :
+          - Golang, Clickhouse, PostgreSQL, Redis, Ory, SpiceDB, Docker, Kubernetes, Github, Argo CD.
+
+        **Approaches** :
+          - Kanban, code reviews, clean code architecture, [ADRs](https://adr.github.io/).
 
     - role: Senior Software Engineer (Golang)
       time: Nov 2021 – Jul 2022

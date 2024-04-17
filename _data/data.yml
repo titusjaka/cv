@@ -70,13 +70,175 @@ career-profile:
 #        time:
 #        details:
 
-#experiences:
-#  title: Experiences
-#  info:
-#    - role:
-#      time:
-#      company:
-#      details:
+experiences:
+  title: Experiences
+  info:
+#    # TODO: fill experience about headframe
+#    - role: Senior Software Engineer (Golang)
+#      time: Aug 2022 – Mar 2024
+#      company: Headframe, Abu Dhabi (remotely)
+#      website: https://headframe.io/en/
+#      details: |
+#
+#        **Technologies** :
+#          - Golang, Clickhouse, PostgreSQL, Redis, Docker, Kubernetes, Github, Argo CD.
+#
+#        **Approaches** :
+#          - Kanban, code reviews, clean code architecture.
+
+    - role: Senior Software Engineer (Golang)
+      time: Nov 2021 – Jul 2022
+      company: Youla (Project of VK), Moscow
+      website: https://vk.company/en
+      details: |
+        _Youla is a geolocation-based classified ad service. The service helps users sell and buy used items._
+
+        I worked for the infrastructure team dedicated to building the platform for the other developers. 
+        My team's goal was to make launching Golang microservices smooth and fast.
+
+        What I accomplished in this position:
+          - I wrote comprehensive documentation about best practices, CI/CD, architecture, and other vital topics.
+          - I created the `launchpad`, a small CLI tool that generated a new service within one command. 
+            The resulting service had telemetry, CI/CD, and deployment configuration for the Kubernetes cluster.
+          - I created an infrastructure framework for reusable instruments such as logging, metrics, tracing, and profiling.
+
+        **Technologies**: 
+          - Golang, Docker, Kubernetes, Gitlab.
+        
+        **Approaches**: 
+          - Agile, code reviews, clean code architecture.
+
+    - role: Senior Software Engineer (Golang)
+      time: Feb 2021 – Jul 2021
+      company: Golane, Munich (remotely)
+      website: https://www.linkedin.com/company/golane
+      details: |
+        _Golane is a startup building a simple ticketing system for public transport._
+        
+        At this position, I was developing payment services.
+        
+          - I implemented an integration with the German payment provider LogPay.
+          - I developed a calculator for the best price. This service calculates the best possible 
+            combination of tickets (daily, weekly, etc.) for a user. It was an exciting and challenging 
+            task since it was an NP-complex problem.
+        
+        **Technologies**: 
+          - Golang, PostgreSQL, Docker, Kafka, GraphQL, gRPC.
+        
+        **Approaches**: 
+          - Agile, code reviews, clean code architecture.
+
+    - role: Senior Software Engineer (Golang)
+      time: Mar 2020 – Dec 2020
+      company: xpate, Riga (remotely)
+      website: https://xpate.com/
+      details: |
+        _xpate is a fintech startup building drag&drop-centric payment system._
+
+        I was developing the key projects of the company: the core-banking and the payment gateway.
+
+        My main achievements:
+          - I designed and developed a tariff system for the core-banking and the payment gateway.
+          - I designed and developed a payment routing module and a status model for the payment gateway.
+
+        _Unfortunately, one day the company decided to close the development department completely and use
+        white-label software instead._
+
+        **Technologies**: 
+          - Golang, PostgreSQL, Docker, Gitlab, Clickhouse, Grafana.
+
+        **Approaches**: 
+          - Agile, blameless-postmortems, code reviews.
+
+    - role: Chief Technology Officer
+      time: Sep 2019 – Feb 2020
+      company: Enjoy.ai, Minsk
+      website: https://www.facebook.com/enjoyaipage/
+      details: |
+        _Enjoy.ai was a sexual wellness startup. Its goal was to help people diversify their intimate lives._
+        
+        I was the only developer at a small startup. I was responsible for all technical solutions and their implementation. 
+        The startup operated for six months until its investment ran out. During this time, we were able to build three full 
+        MVPs to test hypotheses.
+
+        My main achievements:
+        
+          - I was actively involved in thinking through the company's business strategy, not just in code development.
+          - I was able to implement business ideas quickly. It was important not to waste time on long development, but 
+            to release the product and test the hypothesis as soon as possible.
+        
+        **Technologies**: 
+          - Golang, NLP, JavaScript, Docker, Gitlab.
+
+    - role: Senior Software Engineer (Golang)
+      time: Dec 2018 — Sep 2019
+      company: Affise, Minsk
+      website: https://affise.com
+      details: |
+        _Affise is a SaaS platform for performance marketing._
+        
+        I was involved in the development of the core Affise platform.
+        
+        My main achievements:
+          - I optimized two Golang services to handle 100,000 clicks per second per instance with 20 milliseconds of latency.
+          - I designed an on-call duty process and instilled a culture of blameless postmortems.
+        
+        **Technologies**: 
+          - Golang, ElasticSearch, Clickhouse, gRPC, Docker, Drone.io, Github, Ansible.
+        
+        **Approaches**: 
+          - Agile, blameless-postmortems, code reviews, on-call duties.
+
+    - role: Software Engineer (Golang)
+      time: Mar 2018 — Dec 2018
+      company: SKB Kontur, Yekaterinburg
+      website: https://kontur-inc.com/
+      details: |
+        _[Moira](https://github.com/moira-alert) is an open-source real-time alerting system designed for a massive 
+        number of metrics. It processes more than 200,000 metrics per second._
+
+        I was part of a team of two developers that developed Moira Alert. I was responsible for the entire lifecycle
+        of the service. This included design, development, support, and on-call duties.
+
+        The most significant task that I implemented was a full-text search for triggers stored in Moira. It used an
+        embedded search engine and was capable of serving over 10,000 searches per second per instance.
+
+        **Technologies**: 
+          - Golang, TeamCity, GitHub, GitLab, Ansible, Docker, Travis, Redis, [bleve search](http://blevesearch.com/). 
+        
+        **Approaches**:
+          - Agile, blameless-postmortems, code reviews, on-call duties.
+
+    - role: Independent Entrepreneur
+      company: Anti-cafe D12, Yekaterinburg
+      time: Jan 2017 — Mar 2018
+      website: https://vk.com/d12.online
+      details: |
+        I tried my hand at entrepreneurship and opened an anti-café in Yekaterinburg.
+        
+        D12 helped me learn new skills in marketing, administration, and audience engagement. 
+        Unfortunately, it was not commercially viable, so I decided to close the café.
+
+        **Approaches**: 
+          - customer development, marketing, administration.
+
+    - role: DevOps Engineer
+      time: Oct 2015 — Jul 2017
+      company: SKB Kontur, Yekaterinburg
+      website: https://kontur-inc.com/
+      details: |
+        _SKB Kontur is a large IT-company that develops dozens of products for B2B and B2G._
+
+        I was implementing and maintaining CI/CD in a Microsoft-oriented environment.
+
+        I helped most teams to migrate from manual deployment to [Octopus Deploy](https://octopus.com/). 
+        As a result, I was managing CI/CD on thousands of nodes.
+
+        **Technologies**: 
+          - Octopus Deploy, TeamCity, Windows Server, C#, Powershell, Gitlab, Go, Ansible, Docker.
+
+        **Approaches**:
+          - Agile, code reviews, blameless-postmortems, on-call duties.
 
 #certifications:
 #  title: Certifications

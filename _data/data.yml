@@ -73,7 +73,7 @@ career-profile:
 experiences:
   title: Experiences
   info:
-    - role: Senior Software Engineer (Golang)
+    - role: Principal Software Engineer (Golang)
       time: Aug 2022 – Mar 2024
       company: Headframe, Abu Dhabi (remotely)
       website: https://headframe.io/en/
@@ -98,13 +98,13 @@ experiences:
             mining within minutes.
           - I developed an API service with over 200 endpoints. All endpoints were protected by a proper permission model.
 
-        **Technologies** :
+        **Technologies**:
           - Golang, Clickhouse, PostgreSQL, Redis, Ory, SpiceDB, Docker, Kubernetes, Github, Argo CD.
 
-        **Approaches** :
+        **Approaches**:
           - Kanban, code reviews, clean code architecture, [ADRs](https://adr.github.io/).
 
-    - role: Senior Software Engineer (Golang)
+    - role: Principal Software Engineer (Golang)
       time: Nov 2021 – Jul 2022
       company: Youla (Project of VK), Moscow
       website: https://vk.company/en
@@ -126,7 +126,7 @@ experiences:
         **Approaches**: 
           - Agile, code reviews, clean code architecture.
 
-    - role: Senior Software Engineer (Golang)
+    - role: Principal Software Engineer (Golang)
       time: Feb 2021 – Jul 2021
       company: Golane, Munich (remotely)
       website: https://www.linkedin.com/company/golane

@@ -14,7 +14,9 @@ sidebar:
 
   # Sidebar links
   email: sescusu@gmail.com
-  timezone: Asia/Tbilisi (GTM +4)
+  timezone:
+    name: Asia/Tbilisi Timezone
+    link: https://time.is/Tbilisi
   linkedin: denis-titusov
   github: titusjaka
   telegram: denis_titusov # add your nickname without '@' sign

@@ -19,9 +19,13 @@
     </li>
     {% endif %}
 
-    {% if sidebar.timezone %}
+    {% if sidebar.timezone.name %}
     <li class="timezone"><i class="fas fa-clock"></i>
-      <a href="https://worldtimeapi.org/timezone/{{ sidebar.timezone }}" target="_blank">{{ sidebar.timezone }} Timezone</a>
+      {% if sidebar.timezone.link %}
+      <a href="{{ sidebar.timezone.link }}" target="_blank">{{ sidebar.timezone.name }}</a>
+      {% else %}
+      <a href="">{{ sidebar.timezone.name }}</a>
+      {% endif %}
     </li>
     {% endif %}
 

@@ -1,0 +1,22 @@
+---
+layout: default
+permalink: /en
+---
+
+{% assign resume_data = site.data.en %}
+
+{% include sidebar.html resume_data=resume_data %}
+
+<div class="main-wrapper">
+  {% include lang-switcher.html resume_data=resume_data %}
+
+  {% include career-profile.html resume_data=resume_data %}
+  {% include skills.html resume_data=resume_data %}
+  {% include skills-alt.html resume_data=resume_data %}
+  {% include experiences.html resume_data=resume_data %}
+  {% include certifications.html resume_data=resume_data %}
+  {% include projects.html resume_data=resume_data %}
+  {% include oss-contributions.html resume_data=resume_data %}
+  {% include publications.html resume_data=resume_data %}
+  {% include recommendations.html resume_data=resume_data %}
+</div>

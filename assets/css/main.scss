@@ -4,15 +4,37 @@
 
 @charset "utf-8";
 
-
 // define variable with front matter
-{% if site.data.data.sidebar.position == 'left' %}
+{% if site.sidebar.position == 'left' %}
 $resume-order: 2;
 $sidebar-order: 1;
 {% else %}
 $resume-order: 1;
 $sidebar-order: 2;
 {% endif %}
+
+@media print {
+  .language-switcher {
+    display: none;
+  }
+  {% if site.print.oss == false %}
+  .oss-section {
+    display: none;
+  }
+  {% endif %}
+
+  {% if site.print.projects == false %}
+  .projects-section {
+    display: none;
+  }
+  {% endif %}
+
+  {% if site.print.skills == false %}
+  .skills-section {
+    display: none;
+  }
+  {% endif %}
+}
 
 @import "skins/{{ site.theme_skin | default: 'blue' }}"; // skin
 @import "default"; // main partials

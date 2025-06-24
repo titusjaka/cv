@@ -336,3 +336,19 @@ p {
     color: $heart;
   }
 }
+
+
+.language-switcher {
+  font-size: 14px;
+  text-align: right;
+  margin-bottom: 30px;
+  a {
+    color: darken($theme-color, 10%);
+    text-decoration: none;
+    margin: 0 5px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

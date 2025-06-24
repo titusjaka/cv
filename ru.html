@@ -1,0 +1,28 @@
+---
+layout: default
+permalink: /ru
+lang: ru
+---
+
+{% assign resume_data = site.data.ru %}
+
+{% include sidebar.html resume_data=resume_data %}
+
+<div class="main-wrapper">
+  {% include lang-switcher.html resume_data=resume_data %}
+
+  {% include career-profile.html resume_data=resume_data %}
+
+  {% unless resume_data.sidebar.education %}
+  {% include education.html resume_data=resume_data %}
+  {% endunless %}
+
+  {% include skills.html resume_data=resume_data %}
+  {% include skills-alt.html resume_data=resume_data %}
+  {% include experiences.html resume_data=resume_data %}
+  {% include certifications.html resume_data=resume_data %}
+  {% include projects.html resume_data=resume_data %}
+  {% include oss-contributions.html resume_data=resume_data %}
+  {% include publications.html resume_data=resume_data %}
+  {% include recommendations.html resume_data=resume_data %}
+</div>

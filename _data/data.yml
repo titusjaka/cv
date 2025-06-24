@@ -9,13 +9,16 @@ sidebar:
 
   # Profile information
   name: Denis Titusov
-  tagline: Golang Developer
+  tagline: | 
+    Product-Focused Engineer
+    <br>
+    System Design Mindset
   #    avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
   email: sescusu@gmail.com
   timezone:
-    name: Asia/Tbilisi Timezone
+    name: Tbilisi Timezone (UTC +4)
     link: https://time.is/Tbilisi
   linkedin: denis-titusov
   github: titusjaka
@@ -48,18 +51,21 @@ sidebar:
 career-profile:
   title: Career Profile
   summary: |
-    I'm a software engineer with a focus on Golang. Since 2018, Golang has been my primary technology.
-    In addition, I have some team leadership and DevOps experience.
-    
-    I'm great at problem-solving and taking initiative. I take into account the needs of the company and the clients,
-    and I strive to accomplish business objectives rather than just complete duties.
-    
-    I'm passionate about building sustainable, fault-tolerant, and scalable solutions. I appreciate
-    maintainability; therefore, I advocate clean code architecture, unit tests, and documentation.
-    
-    My key values:
-    
-    - team work;
+    I'm a software engineer with a focus on Golang. Since 2018, Go has been my primary language 
+    and the core of most production systems I've worked on. I started my career in DevOps and grew 
+    through early backend roles in startups and larger teams — this experience shaped my focus on 
+    long-term engineering practices and system design.
+
+    I’m a pragmatic engineer who takes initiative and solves problems with business outcomes in mind. 
+    I care about impact, not just execution — and I look for ways to improve both developer experience 
+    and user-facing systems.
+
+    I’m passionate about building sustainable, fault-tolerant, and scalable software. I value maintainability,
+    clean code architecture, test coverage, and clear documentation as core enablers of velocity and quality.
+
+    **My key values:**
+
+    - teamwork;
     - healthy communication;
     - honesty and transparency;
     - reliability.
@@ -75,190 +81,79 @@ career-profile:
 experiences:
   title: Experiences
   info:
-    - role: Principal Software Engineer (Golang)
-      time: Aug 2022 – Mar 2024
+    - role: R&D Backend Engineer
+      time: Sep 2024 – Mar 2025
+      company: Hellotickets, Madrid (remotely)
+      website: https://www.hellotickets.com/
+      details: |
+        _Hellotickets is a platform for booking tickets to live events._
+
+        I joined the R&D team to improve engineering practices, strengthen service architecture, and support product teams across the organization.  
+        Over time, the company’s priorities shifted toward short-term delivery, with less emphasis on technical foundations.  
+        I focused on areas where I could still bring value — but ultimately realized that I’m most effective in environments that invest in long-term architecture.
+
+        **Key contributions:**
+          - Simplified Elastic APM integration for Go services, improving observability and diagnostics.
+          - Contributed to monolith refactoring by extracting a high-load event search service (e.g., concerts, matches), enhancing performance and scalability.
+
+    - role: Founding Backend Engineer
+      time: Aug 2022 – Apr 2025
+      time_note: "Full-time: Aug 2022 – Mar 2024 · Advisory: Apr 2024 – Apr 2025"
       company: Headframe, Abu Dhabi (remotely)
       website: https://headframe.io/en/
       details: |
-        _Headframe is a startup that develops software for Bitcoin mining and hashrate management._
+        _Headframe is a startup developing software for managing ASIC devices and renting out Bitcoin hashrate._
 
-        I joined the project as the first developer and worked through the entire lifecycle of the company. 
-        Our team consisted of two backend developers, one frontend developer, one DevOps, and the CTO.
+        I joined as the first backend engineer and helped grow the product from an early prototype to a scalable production system.
 
-        Despite the fact that we were a small startup, we followed best practices.
-          - All essential decisions were captured in Architecture Decision Records (ADRs).
-          - Code was covered with unit and functional testing. Coverage was around 90%.
-          - We had solid CI/CD processes, including automated testing, linters, and deployment to a K8s cluster.
+        **Key contributions (Aug 2022 – Mar 2024):**
+          - Established long-term engineering foundations, including ADR-driven architecture, high test coverage (~90%), and documentation as a first-class development tool.
+          - Built the **Stratum Relay**, a high-performance TCP server handling 20,000+ concurrent ASIC connections with ~20ms latency.
+          - Designed the **virtual mining system**, enabling on-demand hashrate rental and reducing onboarding time from days to minutes.
+          - Delivered a production-grade API with 200+ endpoints, secured with fine-grained access control via Ory and SpiceDB.
 
-        These concepts helped us maintain a rapid development pace throughout the company's lifecycle. I was more 
-        than just a consumer of these ideals; I helped create them.
+        _Since April 2024, I’ve continued supporting the company in a consulting role — advising on architecture and helping the team evolve the system._
 
-        My main achievements:
-          - I developed the Stratum Relay. It's a TCP server that connects ASICs (mining devices) to a parent mining pool. 
-            It was capable of serving 20,000 concurrent TCP connections with a latency as low as 20 ms.
-          - I developed a virtual mining feature. Virtual mining allows users to rent ASICs with a few clicks and start 
-            mining within minutes.
-          - I developed an API service with over 200 endpoints. All endpoints were protected by a proper permission model.
-
-        **Technologies**:
-          - Golang, Clickhouse, PostgreSQL, Redis, Ory, SpiceDB, Docker, Kubernetes, Github, Argo CD.
-
-        **Approaches**:
-          - Kanban, code reviews, clean code architecture, [ADRs](https://adr.github.io/).
-
-    - role: Principal Software Engineer (Golang)
+    - role: Principal Software Engineer
       time: Nov 2021 – Jul 2022
       company: Youla (Project of VK), Moscow
       website: https://vk.company/en
       details: |
-        _Youla is a geolocation-based classified ad service. The service helps users sell and buy used items._
+        _Youla is a location-based classifieds platform and part of the VK ecosystem._
 
-        I worked for the infrastructure team dedicated to building the platform for the other developers. 
-        My team's goal was to make launching Golang microservices smooth and fast.
+        I was part of the infrastructure team focused on improving developer experience and streamlining Go service delivery.
 
-        What I accomplished in this position:
-          - I wrote comprehensive documentation about best practices, CI/CD, architecture, and other vital topics.
-          - I created the `launchpad`, a small CLI tool that generated a new service within one command. 
-            The resulting service had telemetry, CI/CD, and deployment configuration for the Kubernetes cluster.
-          - I created an infrastructure framework for reusable instruments such as logging, metrics, tracing, and profiling.
+        **Key contributions:**
+          - Built `launchpad`, a CLI utility for scaffolding production-ready Go services — including telemetry, CI/CD, and Kubernetes deployment — with a single command.
+          - Designed a modular infrastructure framework for logging, metrics, tracing, and profiling.
+          - Wrote internal documentation covering service architecture, deployment pipelines, and engineering best practices.
 
-        **Technologies**: 
-          - Golang, Docker, Kubernetes, Gitlab.
-        
-        **Approaches**: 
-          - Agile, code reviews, clean code architecture.
-
-    - role: Principal Software Engineer (Golang)
+    - role: Principal Backend Engineer
       time: Feb 2021 – Jul 2021
-      company: Golane, Munich (remotely)
+      company: golane, Munich (remotely)
       website: https://www.linkedin.com/company/golane
       details: |
-        _Golane is a startup building a simple ticketing system for public transport._
-        
-        At this position, I was developing payment services.
-        
-          - I implemented an integration with the German payment provider LogPay.
-          - I developed a calculator for the best price. This service calculates the best possible 
-            combination of tickets (daily, weekly, etc.) for a user. It was an exciting and challenging 
-            task since it was an NP-complex problem.
-        
-        **Technologies**: 
-          - Golang, PostgreSQL, Docker, Kafka, GraphQL, gRPC.
-        
-        **Approaches**: 
-          - Agile, code reviews, clean code architecture.
+        _Golane is a German startup building a ticketing system for public transportation._
 
-    - role: Senior Software Engineer (Golang)
-      time: Mar 2020 – Dec 2020
+        **Key contributions:**
+          - Developed a payment service integrated with LogPay, a major local provider — enabling seamless end-to-end transit payments.
+          - Built a fare optimization engine that computed the most cost-effective combination of daily and weekly tickets — 
+            solving a domain-specific NP-complete problem.
+
+    - role: Senior Backend Engineer
+      time: Mar 2020 – Feb 2021
       company: xpate, Riga (remotely)
       website: https://xpate.com/
       details: |
-        _xpate is a fintech startup building drag&drop-centric payment system._
+        _Xpate is a fintech startup developing a drag-and-drop-centric payment platform._
 
-        I was developing the key projects of the company: the core-banking and the payment gateway.
+        I worked on the company’s core banking system and payment gateway — two of its most critical services.
 
-        My main achievements:
-          - I designed and developed a tariff system for the core-banking and the payment gateway.
-          - I designed and developed a payment routing module and a status model for the payment gateway.
+        **Key contributions:**
+          - Designed and implemented a configurable tariff engine used across both systems.
+          - Built a dynamic payment routing module and transaction status model to improve flexibility and operational transparency.
 
-        _Unfortunately, one day the company decided to close the development department completely and use
-        white-label software instead._
-
-        **Technologies**: 
-          - Golang, PostgreSQL, Docker, Gitlab, Clickhouse, Grafana.
-
-        **Approaches**: 
-          - Agile, blameless-postmortems, code reviews.
-
-    - role: Chief Technology Officer
-      time: Sep 2019 – Feb 2020
-      company: Enjoy.ai, Minsk
-      website: https://www.facebook.com/enjoyaipage/
-      details: |
-        _Enjoy.ai was a sexual wellness startup. Its goal was to help people diversify their intimate lives._
-        
-        I was the only developer at a small startup. I was responsible for all technical solutions and their implementation. 
-        The startup operated for six months until its investment ran out. During this time, we were able to build three full 
-        MVPs to test hypotheses.
-
-        My main achievements:
-        
-          - I was actively involved in thinking through the company's business strategy, not just in code development.
-          - I was able to implement business ideas quickly. It was important not to waste time on long development, but 
-            to release the product and test the hypothesis as soon as possible.
-        
-        **Technologies**: 
-          - Golang, NLP, JavaScript, Docker, Gitlab.
-
-    - role: Senior Software Engineer (Golang)
-      time: Dec 2018 — Sep 2019
-      company: Affise, Minsk
-      website: https://affise.com
-      details: |
-        _Affise is a SaaS platform for performance marketing._
-        
-        I was involved in the development of the core Affise platform.
-        
-        My main achievements:
-          - I optimized two Golang services to handle 100,000 clicks per second per instance with 20 milliseconds of latency.
-          - I designed an on-call duty process and instilled a culture of blameless postmortems.
-        
-        **Technologies**: 
-          - Golang, ElasticSearch, Clickhouse, gRPC, Docker, Drone.io, Github, Ansible.
-        
-        **Approaches**: 
-          - Agile, blameless-postmortems, code reviews, on-call duties.
-
-    - role: Software Engineer (Golang)
-      time: Mar 2018 — Dec 2018
-      company: SKB Kontur, Yekaterinburg
-      website: https://kontur-inc.com/
-      details: |
-        _[Moira](https://github.com/moira-alert) is an open-source real-time alerting system designed for a massive 
-        number of metrics. It processes more than 200,000 metrics per second._
-
-        I was part of a team of two developers that developed Moira Alert. I was responsible for the entire lifecycle
-        of the service. This included design, development, support, and on-call duties.
-
-        The most significant task that I implemented was a full-text search for triggers stored in Moira. It used an
-        embedded search engine and was capable of serving over 10,000 searches per second per instance.
-
-        **Technologies**: 
-          - Golang, TeamCity, GitHub, GitLab, Ansible, Docker, Travis, Redis, [bleve search](http://blevesearch.com/). 
-        
-        **Approaches**:
-          - Agile, blameless-postmortems, code reviews, on-call duties.
-
-    - role: Independent Entrepreneur
-      company: Anti-cafe D12, Yekaterinburg
-      time: Jan 2017 — Mar 2018
-      website: https://vk.com/d12.online
-      details: |
-        I tried my hand at entrepreneurship and opened an anti-café in Yekaterinburg.
-        
-        D12 helped me learn new skills in marketing, administration, and audience engagement. 
-        Unfortunately, it was not commercially viable, so I decided to close the café.
-
-        **Approaches**: 
-          - customer development, marketing, administration.
-
-    - role: DevOps Engineer
-      time: Oct 2015 — Jul 2017
-      company: SKB Kontur, Yekaterinburg
-      website: https://kontur-inc.com/
-      details: |
-        _SKB Kontur is a large IT-company that develops dozens of products for B2B and B2G._
-
-        I was implementing and maintaining CI/CD in a Microsoft-oriented environment.
-
-        I helped most teams to migrate from manual deployment to [Octopus Deploy](https://octopus.com/). 
-        As a result, I was managing CI/CD on thousands of nodes.
-
-        **Technologies**: 
-          - Octopus Deploy, TeamCity, Windows Server, C#, Powershell, Gitlab, Go, Ansible, Docker.
-
-        **Approaches**:
-          - Agile, code reviews, blameless-postmortems, on-call duties.
+        My involvement ended when the company transitioned from internal development to a white-label solution.
 
 #certifications:
 #  title: Certifications
@@ -272,44 +167,31 @@ experiences:
 #      credentialname:
 #      details:
 
-projects:
-  title: Projects
-  intro: >
-    The projects listed below are ones that I either created or significantly contributed to.
-  assignments:
-    - title: go-archetype
-      link: https://github.com/rantav/go-archetype
-      tagline: Project archetyping and templating in Golang
-
-    - title: godenv
-      link: https://github.com/headframe-io/godenv
-      tagline: A package to read .env files in Golang without regular expressions
-
-    - title: kong-dotenv
-      link: https://github.com/titusjaka/kong-dotenv-go
-      tagline: ENV file resolver for kong CLI parser
-
-    - title: go-sample
-      link: https://github.com/titusjaka/go-sample
-      tagline: Go Backend Sample with the modular structure
-
-    - title: Moira Alerting
-      link: https://github.com/moira-alert/moira
-      tagline: Realtime Alerting for Graphite and Prometheus
+#projects:
+#  title: Projects
+#  intro: >
+#    The projects listed below are ones that I either created or significantly contributed to.
+#  assignments:
+#    - title: go-archetype
+#      link: https://github.com/rantav/go-archetype
+#      tagline: Project archetyping and templating in Golang
 
 oss:
-  title: OSS Contributions
+  title: Open Source Contributions
   intro: >
-    The projects listed below are ones that I made considerable contributions to.
+    I occasionally contribute to open-source tools I rely on or want to improve.
   contributions:
+    - title: go-archetype
+      link: https://github.com/rantav/go-archetype
+      tagline: Refactored internal architecture and added new features to improve usability and extensibility.
 
     - title: testfixtures
       link: https://github.com/go-testfixtures/testfixtures
-      tagline: Ruby on Rails like test fixtures for Go
+      tagline: Fixes and enhancements to fixture loading logic in Go test suites.
 
     - title: kong
       link: https://github.com/alecthomas/kong
-      tagline: Command-line parser for Go
+      tagline: Parser behavior fixes and `.env` support improvements.
 
 #publications:
 #  title: Publications
@@ -341,52 +223,42 @@ oss:
 #
 #        He is a great employee!
 
-skills:
-  title: Skills & Proficiency
+#skills:
+#  title: Skills & Proficiency
+#
+#  toolset:
+#
+#    - name: 🤝 Problem-solving
+#      level: 90%
+
+skills_alt:
+  title: Skills
 
   toolset:
 
-    - name: 🤝 Problem-solving
-      level: 90%
+    - name: Engineering Focus
+      items:
+        - Golang
+        - System design
+        - Clean architecture
 
-    - name: 🤝 Communication
-      level: 90%
+    - name: Personal Strengths
+      items:
+        - Problem-solving
+        - Clear and transparent communication
+        - Fast and autonomous learning
 
-    - name: 🤝 Self-learning
-      level: 90%
+    - name: Infrastructure & Ops
+      items:
+        - Docker
+        - Kubernetes
+        - Linux
 
-    - name: 🤝 System design
-      level: 70%
-
-    - name: ⚙️ Golang
-      level: 90%
-
-    - name: ⚙️ Docker
-      level: 80%
-
-    - name: ⚙️ PostgreSQL
-      level: 70%
-
-    - name: ⚙️ Redis
-      level: 70%
-
-    - name: ⚙️ gRPC
-      level: 65%
-
-    - name: ⚙️ Clickhouse
-      level: 60%
-
-    - name: ⚙️ Bash
-      level: 60%
-
-    - name: ⚙️ Ansible
-      level: 60%
-
-    - name: ⚙️ Linux
-      level: 55%
-
-    - name: ⚙️ Kubernetes
-      level: 40%
+    - name: Databases
+      items:
+        - PostgreSQL
+        - Redis
+        - Clickhouse
 
 footer: >
   Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>

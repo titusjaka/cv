@@ -16,7 +16,12 @@
 
       <div class="upper-row">
         <h3 class="job-title">{{ experience.role }}</h3>
-        <div class="time">{{ experience.time }}</div>
+        <div class="time">
+          {{ experience.time }}
+          {% if experience.time_note %}
+          <br><span class="time-note">{{ experience.time_note }}</span>
+          {% endif %}
+        </div>
       </div><!--//upper-row-->
 
       {% if experience.website %}

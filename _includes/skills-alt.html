@@ -1,0 +1,25 @@
+{% assign skills = site.data.data.skills_alt %}
+{% if skills %}
+<section class="section skills-section-alt">
+    <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-cogs fa-stack-1x fa-inverse"></i>
+    </span>
+        {{ skills.title }}
+    </h2>
+
+    <div class="skillset-alt">
+        {% for block in skills.toolset %}
+        <div class="skill-block">
+            <h3 class="block-title">{{ block.name }}</h3>
+            <ul class="skill-list">
+                {% for item in block.items %}
+                <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}

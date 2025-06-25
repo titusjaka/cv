@@ -191,7 +191,7 @@ oss:
 
     - title: kong
       link: https://github.com/alecthomas/kong
-      tagline: Исправил поведение парсера и добавил поддержку загрузки переменных из `.env` файлов.
+      tagline: Исправил поведение парсера и добавил поддержку загрузки переменных из .env файлов.
 
 #publications:
 #  title: Publications

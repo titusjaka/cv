@@ -190,7 +190,7 @@ oss:
 
     - title: kong
       link: https://github.com/alecthomas/kong
-      tagline: Parser behavior fixes and `.env` support improvements.
+      tagline: Parser behavior fixes and .env support improvements.
 
 #publications:
 #  title: Publications

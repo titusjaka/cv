@@ -7,11 +7,12 @@ sidebar:
 
   # Profile information
   name: Denis Titusov
-  tagline: | 
+  tagline: |
     Product-Focused Engineer
     <br>
     System Design Mindset
   #    avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+  contact_heading: Contacts
 
   # Sidebar links
   email: sescusu@gmail.com
@@ -110,9 +111,9 @@ experiences:
           - Designed the **virtual mining system**, enabling on-demand hashrate rental and reducing onboarding time from days to minutes.
           - Delivered a production-grade API with 200+ endpoints, secured with fine-grained access control via Ory and SpiceDB.
 
-        _Since April 2024, I’ve continued supporting the company in a consulting role — advising on architecture and helping the team evolve the system._
+        _From April 2024 to April 2025, I supported the company in a consulting role — advising on architecture and helping the team evolve the system._
 
-    - role: Principal Software Engineer
+    - role: Principal Backend Engineer
       time: Nov 2021 – Jul 2022
       company: Youla (Project of VK), Moscow
       website: https://vk.company/en
@@ -148,8 +149,8 @@ experiences:
         I worked on the company’s core banking system and payment gateway — two of its most critical services.
 
         **Key contributions:**
-          - Designed and implemented a configurable tariff engine used across both systems.
-          - Built a dynamic payment routing module and transaction status model to improve flexibility and operational transparency.
+          - Developed a flexible tariff system used by both the core banking platform and the payment gateway. It allowed accountants to configure pricing rules tailored to different clients.
+          - Built a payment routing module that helped reduce processing fees by selecting more cost-effective paths through available payment providers.
 
         My involvement ended when the company transitioned from internal development to a white-label solution.
 
@@ -257,6 +258,3 @@ skills_alt:
         - PostgreSQL
         - Redis
         - Clickhouse
-
-footer: >
-  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>

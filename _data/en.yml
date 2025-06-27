@@ -1,7 +1,3 @@
-#
-# Be aware that even a small syntax error here can lead to failures in output.
-#
-
 sidebar:
   education: false # set to False if you want education in main section instead of in sidebar
 
@@ -22,21 +18,6 @@ sidebar:
   linkedin: denis-titusov
   github: titusjaka
   telegram: denis_titusov # add your nickname without '@' sign
-  # phone: 012 345 6789
-  #  citizenship:
-  #  website: https://example.com/ # Include the full website URL, including "http://" or "https://".
-  #  xing: alandoe
-  #  gitlab:
-  #  bitbucket:
-  #  bluesky: '@jekyllrb.bsky.social' # Specify your full Bluesky handle
-  #  twitter: '@jekyllrb'
-  #  stack-overflow: # Number/Username, e.g. 123456/alandoe
-  #  codewars:
-  #  goodreads: # Number-Username, e.g. 123456-alandoe
-  #  mastodon: # Please include your full Mastodon link here.
-  #  hackerrank: # Please provide your HackerRank username.
-  #  leetcode: # Please provide your LeetCode username.
-  #  pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
 
   languages:
     title: Languages
@@ -50,32 +31,25 @@ sidebar:
 career-profile:
   title: Career Profile
   summary: |
-    I'm a software engineer with a focus on Golang. Since 2018, Go has been my primary language 
-    and the core of most production systems I've worked on. I started my career in DevOps and grew 
-    through early backend roles in startups and larger teams — this experience shaped my focus on 
-    long-term engineering practices and system design.
+    I'm an engineer who puts business value first. For me, it’s essential that a product solves real problems, 
+    delivers value to users and the business, and that the team can work fast and reliably.
 
-    I’m a pragmatic engineer who takes initiative and solves problems with business outcomes in mind. 
-    I care about impact, not just execution — and I look for ways to improve both developer experience 
-    and user-facing systems.
+    My main technical stack is Go. Since 2018, it has been the backbone of every production system I’ve worked 
+    on. 
 
-    I’m passionate about building sustainable, fault-tolerant, and scalable software. I value maintainability,
-    clean code architecture, test coverage, and clear documentation as core enablers of velocity and quality.
+    I started my career as a DevOps engineer and grew into backend roles. 
+    I’ve worked in both startups and larger teams — this experience shaped my approach. 
+    I value system design and long-term engineering practices.
 
-    **My key values:**
+    I pay close attention to architecture, high-load development, maintainability, and internal processes 
+    — everything that keeps systems stable and scalable.
+
+    **What I value most in work:**
 
     - teamwork;
-    - healthy communication;
+    - open and respectful communication;
     - honesty and transparency;
-    - reliability.
-
-#education:
-#    title: Education
-#    info:
-#      - degree:
-#        university:
-#        time:
-#        details:
+    - reliability in people and systems.
 
 experiences:
   title: Experiences
@@ -85,95 +59,78 @@ experiences:
       company: Hellotickets, Madrid (remotely)
       website: https://www.hellotickets.com/
       details: |
-        _Hellotickets is a platform for booking tickets to live events._
+        _Hellotickets is a platform for buying tickets for events worldwide._
+        
+        I joined the R&D team to develop engineering practices, improve service architecture, and support product teams.
 
-        I joined the R&D team to improve engineering practices, strengthen service architecture, and support product teams across the organization.  
-        Over time, the company’s priorities shifted toward short-term delivery, with less emphasis on technical foundations.  
-        I focused on areas where I could still bring value — but ultimately realized that I’m most effective in environments that invest in long-term architecture.
-
+        Over time, the company’s focus shifted toward frequent releases, and systemic improvements took a back seat.  
+        I focused on tasks where I could still bring value but eventually realized that I work most effectively where there’s 
+        a clear demand for sustainable architecture and engineering culture growth.
+        
         **Key contributions:**
-          - Simplified Elastic APM integration for Go services, improving observability and diagnostics.
-          - Contributed to monolith refactoring by extracting a high-load event search service (e.g., concerts, matches), enhancing performance and scalability.
+          - Set up and simplified Elastic APM integration for Go services — this improved observability and accelerated diagnostics.
+          - Took part in monolith refactoring: extracted a high-load event search service (concerts, matches), which improved performance and made scaling easier.
 
     - role: Founding Backend Engineer
       time: Aug 2022 – Apr 2025
-      time_note: "Full-time: Aug 2022 – Mar 2024 · Advisory: Apr 2024 – Apr 2025"
+      time_note: "Full-time: Aug 2022 – Mar 2024 <br> Consultant: Apr 2024 – Apr 2025"
       company: Headframe, Abu Dhabi (remotely)
       website: https://headframe.io/en/
       details: |
-        _Headframe is a startup developing software for managing ASIC devices and renting out Bitcoin hashrate._
+        _Headframe is a startup building a system for managing ASIC devices and renting out Bitcoin hashrate._
 
-        I joined as the first backend engineer and helped grow the product from an early prototype to a scalable production system.
+        I was the first backend engineer in the company. During this time, the team took the product from prototype to a scalable production system.
 
-        **Key contributions (Aug 2022 – Mar 2024):**
-          - Established long-term engineering foundations, including ADR-driven architecture, high test coverage (~90%), and documentation as a first-class development tool.
-          - Built the **Stratum Relay**, a high-performance TCP server handling 20,000+ concurrent ASIC connections with ~20ms latency.
-          - Designed the **virtual mining system**, enabling on-demand hashrate rental and reducing onboarding time from days to minutes.
-          - Delivered a production-grade API with 200+ endpoints, secured with fine-grained access control via Ory and SpiceDB.
+        **Key achievements:**
+          - Introduced engineering practices: ADR-based architecture, ~90% test coverage, and documentation-driven development.
+          - Built the Stratum Relay — a high-load TCP server handling 20,000+ ASIC connections with ~20ms latency.
+          - Designed the virtual mining system, which reduced user onboarding time from days to minutes.
+          - Developed an API with 200+ endpoints and a flexible authorization model using Ory and SpiceDB.
 
-        _From April 2024 to April 2025, I supported the company in a consulting role — advising on architecture and helping the team evolve the system._
+        _From April 2024 to April 2025, I consulted for the company on architecture and system development._
 
     - role: Principal Backend Engineer
       time: Nov 2021 – Jul 2022
-      company: Youla (Project of VK), Moscow
+      company: Youla, Moscow
       website: https://vk.company/en
       details: |
-        _Youla is a location-based classifieds platform and part of the VK ecosystem._
+        _Youla is a user-to-user classifieds platform, part of the VK ecosystem._
 
-        I was part of the infrastructure team focused on improving developer experience and streamlining Go service delivery.
+        In the infrastructure team, I was responsible for simplifying the launch of Go services and improving the overall developer experience.
 
-        **Key contributions:**
-          - Built `launchpad`, a CLI utility for scaffolding production-ready Go services — including telemetry, CI/CD, and Kubernetes deployment — with a single command.
-          - Designed a modular infrastructure framework for logging, metrics, tracing, and profiling.
-          - Wrote internal documentation covering service architecture, deployment pipelines, and engineering best practices.
+        **Key achievements:**
+          - Created `launchpad` — a CLI tool that generated a production-ready service with telemetry, CI/CD, and Kubernetes configuration in a single run. This cut the time to launch new services from hours to minutes.
+          - Built a modular infrastructure library for logging, metrics, tracing, and profiling.
+          - Wrote clear internal documentation covering service architecture, pipelines, and engineering practices.
 
     - role: Principal Backend Engineer
       time: Feb 2021 – Jul 2021
       company: golane, Munich (remotely)
       website: https://www.linkedin.com/company/golane
       details: |
-        _Golane is a German startup building a ticketing system for public transportation._
+        _Golane is a German startup developing a system for public transport payments._
 
-        **Key contributions:**
-          - Developed a payment service integrated with LogPay, a major local provider — enabling seamless end-to-end transit payments.
-          - Built a fare optimization engine that computed the most cost-effective combination of daily and weekly tickets — 
-            solving a domain-specific NP-complete problem.
+        **Key achievements:**
+          - Developed a payment service and integrated it with LogPay — one of the largest local providers. 
+            This allowed passengers to pay for trips directly in the app.
+          - Built a fare calculation module that determined the most cost-effective combination of tickets (daily, weekly, etc.). 
+            The algorithm solved a complex optimization problem, similar to an NP-complete task, taking all fare rules into account.
 
     - role: Senior Backend Engineer
       time: Mar 2020 – Feb 2021
       company: xpate, Riga (remotely)
       website: https://xpate.com/
       details: |
-        _Xpate is a fintech startup developing a drag-and-drop-centric payment platform._
+        _Xpate is a fintech startup developing a payment platform with a drag-and-drop interface._
 
-        I worked on the company’s core banking system and payment gateway — two of its most critical services.
+        I was in charge of the core banking system and the payment gateway — the company’s two key services.
 
-        **Key contributions:**
-          - Developed a flexible tariff system used by both the core banking platform and the payment gateway. It allowed accountants to configure pricing rules tailored to different clients.
-          - Built a payment routing module that helped reduce processing fees by selecting more cost-effective paths through available payment providers.
+        **Key achievements:**
+          - Developed a tariff system for both the core banking platform and the gateway. 
+            This helped the company adjust pricing models for different customer groups.
+          - Built a payment routing module that helped reduce provider fees by selecting more cost-effective payment routes.
 
-        My involvement ended when the company transitioned from internal development to a white-label solution.
-
-#certifications:
-#  title: Certifications
-#  list:
-#    - name:
-#      start:
-#      end:
-#      organization:
-#      credentialid:
-#      credentialurl:
-#      credentialname:
-#      details:
-
-#projects:
-#  title: Projects
-#  intro: >
-#    The projects listed below are ones that I either created or significantly contributed to.
-#  assignments:
-#    - title: go-archetype
-#      link: https://github.com/rantav/go-archetype
-#      tagline: Project archetyping and templating in Golang
+        Later the company discontinued in-house development and switched to an external white-label solution.
 
 oss:
   title: Open Source Contributions
@@ -191,44 +148,6 @@ oss:
     - title: kong
       link: https://github.com/alecthomas/kong
       tagline: Parser behavior fixes and .env support improvements.
-
-#publications:
-#  title: Publications
-#  intro: |
-#    You can list your publications in this section. Lorem ipsum dolor sit
-#    amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-#    bibendum fringilla a eu lectus.
-#  papers:
-#    - title:
-#      link:
-#      authors:
-#      conference:
-
-#recommendations:
-#  title: Recommendations
-#  list:
-#    - person: Yareli Perez
-#      email: perezyareli@example.com
-#      phone: 012 345 6789
-#      role: General Director at example.com
-#      recommendation: |
-#        Alan Doe is a super employee!
-#    - person: Lara Henderson
-#      email: larah@example.com
-#      phone: 012 345 6789
-#      role: General Director at example.com
-#      recommendation: |
-#        I would like to work with Alan Doe again!
-#
-#        He is a great employee!
-
-#skills:
-#  title: Skills & Proficiency
-#
-#  toolset:
-#
-#    - name: 🤝 Problem-solving
-#      level: 90%
 
 skills_alt:
   title: Skills

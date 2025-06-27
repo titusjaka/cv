@@ -1,0 +1,15 @@
+<div class="top-bar">
+    <div class="language-switcher">
+        <a href="/en" {% if page.url contains 'en' %}style="font-weight: bold;"{% endif %}>English</a> |
+        <a href="/ru" {% if page.url contains 'ru' %}style="font-weight: bold;"{% endif %}>Русский</a>
+    </div>
+
+    <button class="print-cv-btn" onclick="window.print()">
+        <i class="fas fa-print"></i>
+        {% if resume_data.print_config.button_text %}
+        {{ resume_data.print_config.button_text }}
+        {% else %}
+        Print CV
+        {% endif %}
+    </button>
+</div>

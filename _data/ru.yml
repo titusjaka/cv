@@ -176,3 +176,6 @@ skills_alt:
         - PostgreSQL
         - Redis
         - Clickhouse
+
+print_config:
+  button_text: Печать резюме

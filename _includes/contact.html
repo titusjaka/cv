@@ -130,5 +130,11 @@
     </li>
     {% endif %}
 
+    {% if sidebar.online_cv.link %}
+    <li class="resume-link print-only"><i class="fas fa-link"></i>
+      <a href="{{ sidebar.online_cv.link }}" target="_blank">{{ sidebar.online_cv.title }}</a>
+    </li>
+    {% endif %}
+
   </ul>
 </div><!--//contact-container-->

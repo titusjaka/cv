@@ -28,6 +28,10 @@ sidebar:
       - idiom: English
         level: Upper Intermediate
 
+  online_cv:
+    title: Online CV
+    link: https://cv.titusov.me/
+
 career-profile:
   title: Career Profile
   summary: |

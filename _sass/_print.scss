@@ -92,3 +92,13 @@
     display: none !important;
   }
 }
+
+.print-only {
+  display: none;
+}
+
+@media print {
+  .print-only {
+    display: block !important;
+  }
+}

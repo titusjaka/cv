@@ -13,7 +13,7 @@
     {% if sidebar.phones %}
       {% for phone in sidebar.phones %}
       <li class="phone"><i class="fas fa-phone"></i>
-        <a href="tel:{{ phone }}">{{ phone }}</a>
+        <a href="tel:{{ phone | replace: ' ', '' }}">{{ phone }}</a>
       </li>
       {% endfor %}
     {% endif %}

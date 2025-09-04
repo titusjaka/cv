@@ -11,6 +11,9 @@ sidebar:
     Устойчивые решения
   avatar: profile_500.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
   contact_heading: Контакты
+  phones:
+    - +995 571 742 064
+    - +7 995 221 19 03
 
   # Sidebar links
   email: sescusu@gmail.com
